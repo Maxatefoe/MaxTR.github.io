@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Max Transit Rentals - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Max Transit Rentals</h1>
+    <p class="tagline">Simple transport rentals for trips and events</p>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-current">Home</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="rates.html">Rates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section class="hero">
+      <h2>Book a vehicle in minutes</h2>
+      <p>Choose from cars, vans, and minibuses.</p>
+    </section>
+
+
+    <section class="columns">
+      <article class="card">
+        <h3>Why choose us</h3>
+        <ul>
+          <li>Friendly support</li>
+          <li>Clean, maintained vehicles</li>
+          <li>Flexible pickup times</li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h3>Quick search</h3>
+  
+        <form action="booking.html" method="get">
+          <label for="pickup">Pickup city</label>
+          <input id="pickup" name="pickup" type="text" placeholder="e.g. Accra">
+
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date">
+
+          <label for="type">Vehicle</label>
+          <select id="type" name="type">
+            <option>Economy Car</option>
+            <option>7-Seater Van</option>
+            <option>Minibus 16</option>
+          </select>
+
+          <button type="submit">Search</button>
+        </form>
+      </aside>
+    </section>
+
+    <section class="card">
+      <h3>Services (ordered)</h3>
+      <ol>
+        <li>Short-term hourly rentals</li>
+        <li>Daily rentals</li>
+        <li>Group transport and events</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Transit Rentals · 123 Transport Ave · Accra
+    </address>
+    <p>2025 Transit Rentals</p>
+  </footer>
+</body>
+</html>

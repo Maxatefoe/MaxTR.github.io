@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Max Transit Rentals - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Max Transit Rentals</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="booking.html" class="nav-current">Booking</a></li>
+        <li><a href="rates.html">Rates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Booking steps</h2>
+      <ol>
+        <li>Choose vehicle and dates</li>
+        <li>Fill in contact details</li>
+        <li>Choose payment option</li>
+        <li>Receive confirmation</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Booking form</h2>
+  
+      <form action="#" method="post">
+        <label for="vehicle">Vehicle</label>
+        <select id="vehicle" name="vehicle">
+          <option>Economy Car</option>
+          <option>7-Seater Van</option>
+          <option>Minibus 16</option>
+        </select>
+
+        <label for="pickup-date">Pickup date</label>
+        <input id="pickup-date" name="pickup-date" type="date">
+
+        <label for="return-date">Return date</label>
+        <input id="return-date" name="return-date" type="date">
+
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="+233 ...">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any special requests"></textarea>
+
+        <fieldset>
+          <legend>Payment</legend>
+          <label><input type="radio" name="payment" value="card" checked> Card</label>
+          <label><input type="radio" name="payment" value="cash"> Cash on pickup</label>
+        </fieldset>
+
+        <button type="submit">Request booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>By booking you agree to our simple terms.</p>
+  </footer>
+</body>
+</html>
